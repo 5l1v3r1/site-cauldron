@@ -9,6 +9,7 @@ using SiteCauldron.Database;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+using Pluralize.NET.Core;
 
 namespace SiteCauldron.Controllers
 {
@@ -32,7 +33,7 @@ namespace SiteCauldron.Controllers
 
         public static Type GetEntityType(string entityType) =>
             Assembly.GetAssembly(typeof(Context)).GetTypes().FirstOrDefault(t =>
-                entityType.ToLower().Equals(t.Name.ToLower() + 's')
+                entityType.Equals(new Pluralizer().Pluralize(t.Name), StringComparison.OrdinalIgnoreCase)
             );
 
 
@@ -52,7 +53,7 @@ namespace SiteCauldron.Controllers
         [HttpGet("{entityType}")]
         public ActionResult GetAll(string entityType) => Ok(
             typeof(Context).GetProperties().FirstOrDefault(p =>
-                p.Name.ToLower().Equals(entityType.ToLower())
+                p.Name.Equals(entityType, StringComparison.OrdinalIgnoreCase)
             )?.GetValue(db)
         );
 
