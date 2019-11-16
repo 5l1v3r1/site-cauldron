@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Pluralize.NET.Core;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SiteCauldron.Controllers
 {
@@ -36,6 +37,8 @@ namespace SiteCauldron.Controllers
                 entityType.Equals(
                     new Pluralizer().Pluralize(t.Name),
                     StringComparison.OrdinalIgnoreCase
+                ) && t.CustomAttributes.Any(a =>
+                    a.AttributeType.Equals(typeof(TableAttribute))
                 )
             );
 
@@ -56,7 +59,8 @@ namespace SiteCauldron.Controllers
         [HttpGet("{entityType}")]
         public ActionResult GetAll(string entityType) => Ok(
             typeof(Context).GetProperties().FirstOrDefault(p =>
-                p.Name.Equals(entityType, StringComparison.OrdinalIgnoreCase)
+                p.Name.Equals(entityType, StringComparison.OrdinalIgnoreCase) &&
+                p.PropertyType.Name.StartsWith("DbSet", StringComparison.Ordinal)
             )?.GetValue(db)
         );
 

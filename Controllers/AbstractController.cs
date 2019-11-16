@@ -17,8 +17,7 @@ namespace SiteCauldron.Controllers
 
         public DbSet<T> Set { get; set; }
 
-
-        public AbstractController(Context context, DbSet<T> set)
+        protected AbstractController(Context context, DbSet<T> set)
         { 
             db = context;
             Set = set;
