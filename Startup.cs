@@ -12,6 +12,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SiteCauldron.Database;
 using Microsoft.EntityFrameworkCore;
+using SiteCauldron.Controllers;
+using System.Reflection;
+using System.ComponentModel.DataAnnotations.Schema;
+using Pluralize.NET.Core;
+using SiteCauldron.Services;
 
 namespace SiteCauldron
 {
@@ -28,7 +33,10 @@ namespace SiteCauldron
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<Context>(options => options.UseSqlServer(Configuration["ConnectionStrings:Local"]));
+            services.AddDbContext<Context>(options => options
+                .UseSqlServer(Configuration["ConnectionStrings:Local"])
+            );
+            services.AddSingleton<IEntitiesInfo, EntitiesInfo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

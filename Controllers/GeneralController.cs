@@ -11,6 +11,7 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Pluralize.NET.Core;
 using System.ComponentModel.DataAnnotations.Schema;
+using SiteCauldron.Services;
 
 namespace SiteCauldron.Controllers
 {
@@ -21,34 +22,35 @@ namespace SiteCauldron.Controllers
         /**** PROPERTIES ****/
 
         private readonly Context db;
-
+        private readonly IEntitiesInfo ei;
 
 
         /**** CONSTRUCTORS ****/
 
-        public GeneralController(Context context) { db = context; }
+        public GeneralController(Context context, IEntitiesInfo entitiesInfo)
+        {
+            db = context;
+            ei = entitiesInfo;
+        }
 
 
 
         /**** HELPER FUNCTIONS ****/
 
-        public static Type GetEntityType(string entityType) =>
-            Assembly.GetAssembly(typeof(Context)).GetTypes().FirstOrDefault(t =>
-                entityType.Equals(
-                    new Pluralizer().Pluralize(t.Name),
-                    StringComparison.OrdinalIgnoreCase
-                ) && t.CustomAttributes.Any(a =>
-                    a.AttributeType.Equals(typeof(TableAttribute))
-                )
-            );
-
-
         public ActionResult Mutate(string entityType, object entity, string action) =>
-            GetEntityType(entityType)?.To(t => Ok(db.SaveAfter((EntityEntry)
-                typeof(Context).GetGenericMethod(action, t)
+            ei.EntityType(entityType)
+            ?.To(t => Ok(db.SaveAfter((EntityEntry)
+                typeof(Context)
+                .GetGenericMethod(action, t)
                 .Invoke(db, new object[] {
-                    typeof(JsonSerializer).GetGenericMethod("Deserialize", t)
-                    .Invoke(null, new object[] { entity.ToString(), null })
+                    typeof(JsonSerializer)
+                    .GetGenericMethod("Deserialize", t)
+                    .Invoke(null,
+                        new object[] {
+                            entity.ToString(),
+                            null
+                        }
+                    )
                 })
             ))) ?? (ActionResult)NotFound();
 
@@ -57,18 +59,15 @@ namespace SiteCauldron.Controllers
         /**** ENPOINTS ****/
 
         [HttpGet("{entityType}")]
-        public ActionResult GetAll(string entityType) => Ok(
-            typeof(Context).GetProperties().FirstOrDefault(p =>
-                p.Name.Equals(entityType, StringComparison.OrdinalIgnoreCase) &&
-                p.PropertyType.Name.StartsWith("DbSet", StringComparison.Ordinal)
-            )?.GetValue(db)
-        );
+        public ActionResult GetAll(string entityType) =>
+            Ok(ei.EntitySet(entityType)?.GetValue(db));
 
 
         [HttpGet("{entityType}/{id}")]
         public ActionResult Get(string entityType, int id) =>
-            GetEntityType(entityType)?.To(t => Ok(db.Find(t, id))) ??
-            (ActionResult)NotFound();
+            ei.EntityType(entityType)
+            ?.To(t => Ok(db.Find(t, id)))
+            ?? (ActionResult)NotFound();
 
 
         [HttpPut("{entityType}")]
@@ -83,8 +82,13 @@ namespace SiteCauldron.Controllers
 
         [HttpDelete("{entityType}/{id}")]
         public ActionResult Delete(string entityType, int id) =>
-            Mutate(entityType, JsonSerializer.Serialize(GetEntityType(entityType)?.To(t => 
-                db.Find(t, id).Do(e => db.Entry(e).State = EntityState.Detached)
-            )), "Remove");
+            Mutate(entityType,
+                JsonSerializer.Serialize(
+                    ei.EntityType(entityType)
+                    ?.To(t => db.Find(t, id)
+                        .Do(e => db.Entry(e).State = EntityState.Detached)
+                    )
+                ), "Remove"
+            );
     }
 }
