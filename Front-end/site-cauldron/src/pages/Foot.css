@@ -1,0 +1,17 @@
+.Footer-Back{
+    background-color:#4B1E66;
+    float: bottom;
+}
+
+.Footer-Texto{
+    font-family: 'Lustria';
+    font-style: italic;
+    color: #A547DE;
+}
+
+.Footer-Texto-Titulo{
+    font-family: 'Lustria';
+    font-style: oblique;
+    font-size: large;
+    color: #0ACE59;
+}

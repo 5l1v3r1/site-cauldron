@@ -1,0 +1,20 @@
+.Menu-Back{
+        background-image: linear-gradient(to right,#0ACE59,#8E40BD,#8E40BD,#8E40BD);
+      
+}
+
+.Menu-Titulo{
+    font-family: 'Lustria';
+    font-style: italic;
+    color: black;
+}
+
+.Menu-Img-Titulo{
+    width: max-content;
+    height: max-content;
+}
+
+.Menu-Boton{
+    height: 30px;
+    width: 30px;
+}
