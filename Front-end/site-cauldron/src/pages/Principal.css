@@ -1,0 +1,14 @@
+.Principal-Back{
+    background: #D9DAD9;
+    min-height: 100%;
+}
+
+.Principal-Img{
+    float: right;
+    width: 30%;
+}
+
+.Principal-Texto{
+    float: bottom;
+    font-family: 'Lustria';
+}
