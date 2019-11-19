@@ -16,5 +16,23 @@ namespace SiteCauldron.Models
 
         [Column("username")]
         public string Username { get; set; }
+
+        [Column("email")]
+        public string Email { get; set; }
+
+        [Column("password")]
+        public string Password { get; set; }
+
+        [Column("phone_number")]
+        public string PhoneNumber { get; set; }
+
+        [Column("currently_active")]
+        public bool CurrentlyActive { get; set; }
+
+        [Column("last_activity")]
+        public DateTime LastActivity { get; set; }
+
+
+        public virtual IQueryable<UserProject> Projects { get; set; }
     }
 }

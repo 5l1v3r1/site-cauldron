@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Database\Migrations\20191112215420_InitialCreate.cs" />
     <Compile Remove="Database\Migrations\20191112215420_InitialCreate.Designer.cs" />
+    <Compile Remove="Database\Migrations\20191119042053_MainModelsCreation.cs" />
+    <Compile Remove="Database\Migrations\20191119042053_MainModelsCreation.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
