@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-import Menu from './pages/Menu.js'
-import Footer from './pages/Foot.js'
-import Principal from './pages/Principal'
+
+import Menu from './components/Menu'
+import Footer from './components/Footer'
+import Principal from './components/Principal'
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Menu/>
       <Principal/>
       <Footer/>
