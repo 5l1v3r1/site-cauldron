@@ -1,15 +1,14 @@
-.Body{
-    background: #D9DAD9;
-    margin-top: 70px;    
-    padding-left: 10px;
-    padding-right: 10px;
-    
-    padding-bottom: 10%;
-    display: flexbox;
+.Body {
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  padding-bottom: 10%;
+  display: flexbox;
 }
 
-.Body-Image{
-    float: right;
-    width: 30%;
-    height: 30%;
+.Body-Image {
+  float: right;
+  width: 30%;
+  height: 30%;
 }
