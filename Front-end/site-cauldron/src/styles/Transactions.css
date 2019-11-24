@@ -3,6 +3,13 @@ input {
   color: #535353;
 }
 
+span {
+  margin-top: 26px;
+  margin-bottom: 5px;
+}
+p {
+  font-weight: 300;
+}
 button {
   padding: 2%;
   margin: 2%;
@@ -45,7 +52,8 @@ button {
 }
 
 .detailBox {
-  text-align: center;
+  display: grid;
+  align-items: center;
   width: 60%;
   height: 80%;
   margin-left: 25px;

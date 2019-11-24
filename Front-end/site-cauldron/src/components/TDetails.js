@@ -3,35 +3,32 @@ import React from "react";
 import "../styles/Transactions.css";
 function details() {
   return (
-    <div class="user">
-      <h1>User Information</h1>
-      <p>
-        Name: <input type="text" placeholder=" User Name" />
-      </p>
-      <p style={{ display: "inline" }}>
-        Email:
-        <input type="text" placeholder=" Current Email / New Email" size="20" />
-        &nbsp;
-        <button>Change Email</button>
-      </p>
-      <p>
-        Pin:
-        <input type="text" placeholder=" - - - - " size="8" maxlength="4" />
-      </p>
-      <p>
-        Cellphone: <input type="text" placeholder=" cellphone" />
-      </p>
-      <h2>Change Password</h2>
-
-      <p>
-        Current Password :
-        <input type="text" placeholder=" ********* " />
-      </p>
-      <p>
-        Type your new Password:
-        <input type="text" placeholder=" ******** " />
-      </p>
-      <button style={{ backgroundColor: "#02b449cc" }}>Update</button>
+    <div class="transaction">
+      <h1>Transaction Receipt</h1>
+      <div class="transactional">
+        <p>
+          Transaction Information: <br />
+          Lorem ipsum dolor sit amet consectetur adipiscing elit fames
+          parturient pharetra, vulputate suspendisse dictumst vivamus mi tortor
+          libero sociosqu quam, dui commodo massa leo hendrerit aptent non eget
+          magnis.
+        </p>
+        <p>
+          Billing Information: <br />
+          Lorem ipsum dolor sit amet consectetur adipiscing elit fames
+          parturient pharetra, vulputate suspendisse dictumst vivamus mi tortor
+          libero sociosqu quam, dui commodo massa leo hendrerit aptent non eget
+          magnis.
+        </p>
+        <div class="detail">
+          <span>Project Name:</span>
+          <div class="detailBox">Example project 3</div>
+        </div>
+        <div class="detail">
+          <span>Price:</span>
+          <div class="detailBox">US $119.99</div>
+        </div>
+      </div>
     </div>
   );
 }

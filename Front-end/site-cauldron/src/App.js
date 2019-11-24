@@ -18,8 +18,8 @@ function App() {
       {/* <UserInfo /> */}
       {/* <RecoverPassword /> */}
       {/* <AboutUs /> */}
-      <Order />
-      {/* <TDetails /> */}
+      {/* <Order /> */}
+      <TDetails />
       <Footer />
     </div>
   );

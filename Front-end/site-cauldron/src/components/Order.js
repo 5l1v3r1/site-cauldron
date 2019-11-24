@@ -7,11 +7,11 @@ function order() {
       <h1>Order Details</h1>
       <div class="transactional">
         <div class="detail">
-          <p>Project Name:</p>
+          <span>Project Name:</span>
           <div class="detailBox">Example project 3</div>
         </div>
         <div class="detail">
-          <p>Price:</p>
+          <span>Price:</span>
           <div class="detailBox">US $119.99</div>
         </div>
       </div>
