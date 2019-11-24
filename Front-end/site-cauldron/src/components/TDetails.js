@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../styles/User.css";
-function user() {
+import "../styles/Transactions.css";
+function details() {
   return (
     <div class="user">
       <h1>User Information</h1>
@@ -36,4 +36,4 @@ function user() {
   );
 }
 
-export default user;
+export default details;

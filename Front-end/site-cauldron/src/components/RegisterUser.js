@@ -1,18 +1,18 @@
 import React from "react";
 
 import "../styles/User.css";
-function user() {
+function register() {
   return (
     <div class="user">
-      <h1>User Information</h1>
+      <h1>Register to start making projects!</h1>
       <p>
         Name: <input type="text" placeholder=" User Name" />
       </p>
       <p style={{ display: "inline" }}>
         Email:
-        <input type="text" placeholder=" Current Email / New Email" size="20" />
+        <input type="text" placeholder=" Email" size="20" />
         &nbsp;
-        <button>Change Email</button>
+        <button>Verify Email</button>
       </p>
       <p>
         Pin:
@@ -21,19 +21,21 @@ function user() {
       <p>
         Cellphone: <input type="text" placeholder=" cellphone" />
       </p>
-      <h2>Change Password</h2>
-
+      <br />
+      <h5>
+        <em>Make sure to pick a strong password</em>
+      </h5>
       <p>
-        Current Password :
+        Password :
         <input type="text" placeholder=" ********* " />
       </p>
       <p>
-        Type your new Password:
+        Confirm Password:
         <input type="text" placeholder=" ******** " />
       </p>
-      <button style={{ backgroundColor: "#02b449cc" }}>Update</button>
+      <button style={{ backgroundColor: "#02b449cc" }}>Register!</button>
     </div>
   );
 }
 
-export default user;
+export default register;

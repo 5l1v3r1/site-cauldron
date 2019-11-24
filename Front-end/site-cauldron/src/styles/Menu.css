@@ -1,45 +1,50 @@
-nav{
-    background-image: linear-gradient(to right,#0ACE59,#8E40BD,#8E40BD,#8E40BD);
-    position: fixed;
-    display: flex;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    margin: 0;
+nav {
+  background-image: linear-gradient(
+    to right,
+    #0ace59,
+    #8e40bd,
+    #8e40bd,
+    #8e40bd
+  );
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
 }
 .logo {
-    color: rgb(0, 0, 0);
-    font-size: xx-large;
-    width: 50%;
-    font-family: "Lustria", serif;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  width: 50%;
+  font-family: "Lustria", serif;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}
 
-  
-  ul{
-    width: 50%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    padding: 5px;
-    padding-top: 15px;
-    float: right;
-  }
-  
-  li:first-child {
-    margin-right: 10px;
-  }
-  
-  li:hover {
-    background-color: #0ace59;
-  }
+ul {
+  width: 50%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-img{
-    height: 30px;
-    width: 30px;
+li {
+  padding: 5px;
+  padding-top: 15px;
+  float: right;
+}
+
+li:first-child {
+  margin-right: 10px;
+}
+
+li:hover {
+  background-color: #0ace59;
+}
+
+img {
+  height: 30px;
+  width: 30px;
 }
