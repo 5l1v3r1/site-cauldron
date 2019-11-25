@@ -1,0 +1,37 @@
+.LogIn{
+        margin-top: 70px;    
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 30%;
+        display: flexbox;   
+        text-align: center;
+}
+
+.LogIn ul{
+    width: 100%;
+    list-style-type: none;
+}
+
+.LogIn span{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.LogIn img{
+    width: 50%;
+}
+
+.LogIn a{
+    font-size: 24px;
+    color: #FF00C7;
+}
+
+.LogIn button{    
+    background-color: #0ACE59;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.LogIn input{
+    margin-left: 10px;
+}

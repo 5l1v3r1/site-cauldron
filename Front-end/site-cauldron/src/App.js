@@ -6,6 +6,7 @@ import Principal from './pages/Principal'
 import Proyects from './pages/Proyects'
 import CreateProyect from './pages/CreateProyect'
 import Documentation from './pages/Documentation'
+import LogIn from './pages/LogIn'
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <Menu/>
       {/* <Proyects/> */}
       {/* <CreateProyect/> */}
-      <Documentation/>
+      {/* <Documentation/> */}
       {/* <Principal/> */}
+      <LogIn/>
       <Footer/>
     </div>
   );
