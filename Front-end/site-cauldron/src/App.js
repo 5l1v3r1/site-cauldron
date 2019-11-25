@@ -16,7 +16,7 @@ function App() {
       {/* <CreateProyect/> */}
       {/* <Documentation/> */}
       {/* <Principal/> */}
-      <LogIn/>
+      {/* <LogIn/> */}
       <Footer/>
     </div>
   );
