@@ -1,0 +1,47 @@
+.about {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border-radius: 25px; */
+  background-clip: padding-box;
+  background-color: rebeccapurple;
+  color: #d9dad9;
+  border: 1px solid #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline;
+  padding-top: 10px;
+}
+.about img {
+  float: right;
+  height: 26px;
+  width: 26px;
+  padding: 5px;
+  padding-top: 2px;
+}
+.about img:hover {
+  background-color: #0ace59;
+  height: 24px;
+  width: 24px;
+}
+
+h2 {
+  display: inline;
+  margin: 2px;
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.about div {
+  margin-top: 10px;
+  padding: 2%;
+  padding-bottom: 6%;
+  background-color: #616161;
+  /* -1px here for to compansate for the outer border of the container */
+  -moz-border-radius: 0 0 9px 9px;
+  border-radius: 0 0 9px 9px;
+  -webkit-border-radius: 0 0 9px 9px;
+}

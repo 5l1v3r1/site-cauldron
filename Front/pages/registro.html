@@ -1,0 +1,73 @@
+
+<!-- TODO: Falta poner todo el contenido visible para el usuario en ingles solamente, por el momento quedo mixto -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Registro de usuarios</title>
+  </head>
+  <body>
+    <!-- menu superior -->
+    <div id="menu">
+      <a href="#" class="logo">Site Cauldron</a>
+      <ul id="tiraOpciones">
+        <li>
+          <a href="#"><img src="/resources/doc.png" alt="documentacion"/></a>
+        </li>
+        <li>
+          <a href="#"><img src="/resources/info.png" alt="informacion"/></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/resources/entrar.png" alt="iniciar session"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <!-- seccion principal -->
+    <div class="cuerpo">
+      <h1>Información del Usuario</h1>
+      <p>Nombre: <input type="text" placeholder="Nombre del Usuario" /></p>
+      <p style="display:inline">
+        Correo Electronico:
+        <input
+          type="text"
+          placeholder="Correo actual / Correo Nuevo"
+          size="35"
+        />
+      </p>
+      <button>Cambiar Correo</button>
+      <p>
+        Codigo:
+        <input type="text" placeholder="- - - -" size="8" maxlength="4" />
+      </p>
+      
+      <button class="expandible">Cambio de Contraseña</button>
+<div class="oculto">
+    <p>
+        Contraseña Actual:
+        <input type="text" placeholder="*********" />
+      </p>
+      <p>
+        Ingresar nueva Contraseña:
+        <input type="text" placeholder="********" />
+      </p>
+      <button style="background:#02b449cc">Enviar</button>
+</div>
+        
+      </div>
+    </div>
+    <!-- pie de pagina -->
+    <div class = "footer">
+      <div><h2>Organizations</h2> <p>Lorem ipsum dolor sit</p><p> Lorem ipsum dolor sit </p></div>
+      <div><h2>Technologies</h2>  <p>Lorem ipsum dolor sit</p><p> Lorem ipsum dolor sit </p></div>
+      <div><h2>Contact Us</h2> <p>Lorem ipsum dolor sit</p><p> Lorem ipsum dolor sit </p></div>
+    </div>
+    <script src="/scripts/expandibles.js"></script>
+  </body>
+</html>
+<em></em>
+<br>
