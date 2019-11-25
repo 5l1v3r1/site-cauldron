@@ -1,15 +1,16 @@
 import React from 'react';
 
-
 import Menu from './components/Menu'
 import Footer from './components/Footer'
-import Principal from './components/Principal'
+import Principal from './pages/Principal'
+import Proyects from './pages/Proyects'
 
 function App() {
   return (
-    <div >
+    <div>
       <Menu/>
-      <Principal/>
+      <Proyects/>
+      {/* <Principal/> */}
       <Footer/>
     </div>
   );

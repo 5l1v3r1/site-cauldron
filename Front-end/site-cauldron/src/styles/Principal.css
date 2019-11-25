@@ -1,14 +1,12 @@
 .Body{
-    background: #D9DAD9;
     margin-top: 70px;    
     padding-left: 10px;
     padding-right: 10px;
-    
-    padding-bottom: 10%;
+    padding-bottom: 30%;
     display: flexbox;
 }
 
-.Body-Image{
+.Body img{
     float: right;
     width: 30%;
     height: 30%;

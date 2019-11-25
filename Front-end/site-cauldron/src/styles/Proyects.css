@@ -1,0 +1,22 @@
+.Proyects{
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 20%;
+}
+.Proyects table{
+    width: 100%;
+}
+.Proyects th, td{
+    width: 20%;
+}
+.Proyects hr{
+    height: 10px;
+    background-color: #C4C4C4;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+.NewProyect {
+    background-color: #0ACE59;
+    cursor: pointer;
+    font-size: 20px;
+}
