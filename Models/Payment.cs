@@ -21,6 +21,9 @@ namespace SiteCauldron.Models
 
         [Column("payment_date")]
         public DateTime DatePayment { get; set; }
+
+        [Column("payment_reference")]
+        public string PaymentReference { get; set; }
         
         public virtual UserProject UserProject { get; set; }
     }

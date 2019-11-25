@@ -23,9 +23,6 @@ namespace SiteCauldron.Models
         [Column("password")]
         public string Password { get; set; }
 
-        [Column("phone_number")]
-        public string PhoneNumber { get; set; }
-
         [Column("currently_active")]
         public bool CurrentlyActive { get; set; }
 

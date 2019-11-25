@@ -25,6 +25,9 @@ namespace SiteCauldron.Models
         [Column("description")]
         public string Description { get; set; }
 
+        [Column("validated")]
+        public bool Validated { get; set; }
+
         [Column("date_created")]
         public DateTime DateCreated { get; set; }
 
