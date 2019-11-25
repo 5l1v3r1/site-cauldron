@@ -5,13 +5,15 @@ import Footer from './components/Footer'
 import Principal from './pages/Principal'
 import Proyects from './pages/Proyects'
 import CreateProyect from './pages/CreateProyect'
+import Documentation from './pages/Documentation'
 
 function App() {
   return (
     <div>
       <Menu/>
       {/* <Proyects/> */}
-      <CreateProyect/>
+      {/* <CreateProyect/> */}
+      <Documentation/>
       {/* <Principal/> */}
       <Footer/>
     </div>

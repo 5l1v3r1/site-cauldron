@@ -1,0 +1,37 @@
+.Documentation{
+    margin-top: 70px;    
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 30%;
+    display: flexbox;
+}
+
+.Documentation img{
+    float: right;
+    width: 15%;
+    height: 15%;
+}
+
+.expandible {
+    background-color: #0ace59;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .expandir,
+  .expandible:hover {
+    background-color: #8e40bd;
+  }
+  
+  .oculto {
+    padding: 0 18px 5px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ebebebe1;
+  }
