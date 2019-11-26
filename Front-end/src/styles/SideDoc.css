@@ -24,15 +24,17 @@
   }
 .SideDoc h2 {
     color:#62EF30;
-    transform: rotate(90deg);
-    height: 20px;
+    writing-mode: vertical-lr;
+    text-align: center;    
+    -webkit-text-orientation: sideways-right;
+    text-orientation: sideways-right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 .SideDoc span{
     font-size: 20px;
     font-weight:bold;
-    display: inline-flex;   
-    padding-top: 25%;
-    padding-bottom: 25%;
+    display: block;   
 }
 .SideDoc img{
     width: 50%;

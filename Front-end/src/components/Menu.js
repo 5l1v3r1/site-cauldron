@@ -14,7 +14,7 @@ import '../styles/Menu.css';
 function Menu() {
     return(
     <nav className="nav">
-        <a href="#" class = "logo">
+        <a href="#" className= "logo">
                 <img src={Logo} alt="Logo"/>
                     Site Cauldron
         </a>

@@ -2,8 +2,6 @@ import React,{component} from 'react';
 
 import '../styles/SideDoc.css'
 
-import Cross from '../images/eliminar.png'
-import Database from '../images/Database.PNG'
 import GraphQl from '../images/GraphQL_Logo.png'
 
 function SideDoc() {
@@ -22,25 +20,9 @@ function SideDoc() {
             </p>
         </div>
         <span>
-            <h2>Ayuda</h2>
+            <h2 className="SideText" >Ayuda</h2>
         </span>
-        {/* <h2>Preview</h2>
-        <img className="Close" src={Cross} alt="Exit"></img>
-        
-        <div>
-            <img className="ImgFrame" src={Database} alt="Database example"></img>
-            <span>
-                Proyect Name:
-                <p>Proyect number one</p>
-                Status: 
-                <p>Ready</p>
-
-            <button style={{backgroundColor:"#9BCE0A"}} >Editing</button>
-            <br/>
-            <button style={{backgroundColor:"#0ACE59"}}>Download</button>
-            </span>
-        </div> */}
-  </div>
+    </div>
     );
 }
 

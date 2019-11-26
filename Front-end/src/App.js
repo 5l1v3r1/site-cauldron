@@ -1,11 +1,13 @@
 import React from 'react'
 
+import Menu from './components/Menu'
+import Footer from './components/Footer'
 import SideDoc from './components/SideDoc'
 
 function App() {
   return (
     <div>
-      {/* <Menu/> */}
+      <Menu/>
       {/* <Proyects/> */}
       {/* <CreateProyect/> */}
       {/* <Documentation/> */}
@@ -18,7 +20,7 @@ function App() {
       {/* <Order /> */}
       {/* <TDetails /> */}
       <SideDoc/>
-      {/* <Footer/> */}
+      <Footer/>
       {/* <Preview/> */}
     </div>
   );
