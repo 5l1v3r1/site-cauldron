@@ -1,24 +1,11 @@
 import React from 'react'
 
-import Menu from './components/Menu'
-import Footer from './components/Footer'
-import Principal from './components/Principal'
-import Proyects from './components/Proyects'
-import Preview from './components/Preview'
-import CreateProyect from './components/CreateProyect'
-import Documentation from './components/Documentation'
-import LogIn from './components/LogIn'
-import UserInfo from './components/UserInfo'
-import Register from './components/RegisterUser'
-import RecoverPassword from './components/RecoverPass'
-import AboutUs from './components/About'
-import TDetails from './components/TDetails'
-import Order from './components/Order'
+import SideDoc from './components/SideDoc'
 
 function App() {
   return (
     <div>
-      <Menu/>
+      {/* <Menu/> */}
       {/* <Proyects/> */}
       {/* <CreateProyect/> */}
       {/* <Documentation/> */}
@@ -30,8 +17,9 @@ function App() {
       {/* <AboutUs /> */}
       {/* <Order /> */}
       {/* <TDetails /> */}
-      <Footer/>
-      <Preview/>
+      <SideDoc/>
+      {/* <Footer/> */}
+      {/* <Preview/> */}
     </div>
   );
 }

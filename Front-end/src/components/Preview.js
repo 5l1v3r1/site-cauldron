@@ -12,13 +12,12 @@ function Preview() {
         <img className="Close" src={Cross} alt="Exit"></img>
         
         <div>
-        <img className="ImgFrame" src={Database} alt="Database example"></img>
+        <img className="ImgDatabase" src={Database} alt="Database example"></img>
         <span>
             Proyect Name:
             <p>Proyect number one</p>
              Status: 
             <p>Ready</p>
-
         <button style={{backgroundColor:"#9BCE0A"}} >Editing</button>
         <br/>
         <button style={{backgroundColor:"#0ACE59"}}>Download</button>
