@@ -1,45 +1,47 @@
-nav{
+.Menu{
     background-image: linear-gradient(to right,#0ACE59,#8E40BD,#8E40BD,#8E40BD);
     position: fixed;
     display: flex;
     top: 0;
     width: 100%;
+    min-width: 700px;
     height: 70px;
+    min-height: 70px;
     margin: 0;
 }
-.logo {
-    color: rgb(0, 0, 0);
-    font-size: xx-large;
-    width: 50%;
-    font-family: "Lustria", serif;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
 
-  
-  .nav ul{
+.Menu ul{
     width: 50%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .nav li {
+.Menu li {
     padding: 5px;
     padding-top: 15px;
     float: right;
-  }
+}
   
-  .nav li:first-child {
+.Menu li:first-child {
     margin-right: 10px;
-  }
+}
   
-  .nav li:hover {
+.Menu li:hover {
     background-color: #0ace59;
-  }
+}
 
-.nav img{
+.Menu img{
     height: 30px;
     width: 30px;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  width: 50%;
+  font-family: "Lustria", serif;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 10px;
 }

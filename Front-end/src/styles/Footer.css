@@ -6,9 +6,11 @@
   bottom: 0;
   font-family: "Lustria", serif;
   width: 100%;
+  min-width: 700px;
   height: 15%;
+  min-height: 70px;
   padding-bottom: 10px;
-  background-color: #4b1e66;
+  background-color: #4b1e66; 
 }
 .footer div {
   color: #8e40bd;

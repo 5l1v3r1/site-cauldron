@@ -13,7 +13,7 @@ import '../styles/Menu.css';
 
 function Menu() {
     return(
-    <nav className="nav">
+    <nav className="Menu">
         <a href="#" className= "logo">
                 <img src={Logo} alt="Logo"/>
                     Site Cauldron
