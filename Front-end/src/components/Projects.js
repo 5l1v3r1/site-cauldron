@@ -1,10 +1,10 @@
 import React,{component} from 'react';
 
-import '../styles/Proyects.css'
+import '../styles/Projects.css'
 
-function Proyects() {
+function Projects() {
     return(
-        <div className="Proyects">
+        <div className="Projects">
             <table>
                 <tr>
                     <th> Name </th> 
@@ -189,4 +189,4 @@ function Proyects() {
     );
 }
 
-export default Proyects
+export default Projects

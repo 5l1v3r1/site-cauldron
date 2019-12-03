@@ -1,10 +1,10 @@
 import React,{component} from 'react';
 
-import '../styles/CreateProyect.css'
+import '../styles/CreateProject.css'
 
-function CreateProyect() {
+function CreateProject() {
     return(
-        <form className="CreateProyect">
+        <form className="CreateProject">
             <span> Database Name: 
                 <input maxLength="20" size="20" type="text"/>
             </span>
@@ -63,4 +63,4 @@ function CreateProyect() {
     );
 }
 
-export default CreateProyect
+export default CreateProject

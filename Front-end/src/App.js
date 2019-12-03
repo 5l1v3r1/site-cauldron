@@ -4,6 +4,7 @@ import Menu from './components/Menu'
 import Footer from './components/Footer'
 import SideDoc from './components/SideDoc'
 
+
 function App() {
   return (
     <div>
@@ -19,7 +20,7 @@ function App() {
       {/* <AboutUs /> */}
       {/* <Order /> */}
       {/* <TDetails /> */}
-      <SideDoc/>
+      {/* <SideDoc/> */}
       <Footer/>
       {/* <Preview/> */}
     </div>

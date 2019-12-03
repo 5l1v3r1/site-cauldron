@@ -1,20 +1,20 @@
-.CreateProyect{
+.CreateProject{
     margin-top: 70px;
     margin-bottom: 20%;
     margin-left: 5%;
 }
 
-.CreateProyect span{
+.CreateProject span{
     font-size: 20px;
     font-weight:bold;
 }
 
-.CreateProyect p{
+.CreateProject p{
     font-weight:bold;
     width: 80%;
 }
 
-.CreateProyect input{
+.CreateProject input{
     margin-left: 10px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 
-.CreateProyect button{
+.CreateProject button{
     font-size: 20px;
 }
 
