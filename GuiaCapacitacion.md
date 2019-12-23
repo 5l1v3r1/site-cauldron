@@ -1,5 +1,5 @@
 
-# Guia
+# Guía capacitación de tecnologias
 Tal como revisamos en la ultima reunion del 2019 estos son los recursos que hay que estudiar previo a la fase del desarrollo.
 
 *debajo de algunos temas se agregaron enlaces a recursos sugeridos, si tienen algun recurso bueno que quieran compartir actualicen este archivo ;)*
