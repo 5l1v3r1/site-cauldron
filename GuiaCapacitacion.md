@@ -3,6 +3,34 @@
 
 Tal como revisamos en la ultima reunion del 2019 estos son los recursos que hay que estudiar previo a la fase del desarrollo:
 
+## Bases
+
+Manejar Requests con https
+Archivos JSON
+Comandos GIT
+REST API
+GraphQL
+Testing
+
+## Back-End
+python con django instalar
+5 crud en django
+estandar sintactico
+
+
+## Front-End
+dom
+es6
+estander
+react
+estandar
+
+## Emprendimiento
+Mejorar presentacion
+Investigar competencia:
+ - webflow
+ - bubble.io
+
 
 **[Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/) - Curso con varias de las bases que necesitamos (utilizar credenciales listadas abajo)**
 
