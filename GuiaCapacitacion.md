@@ -13,67 +13,75 @@ Credenciales Comunitarias:
 
 **Comandos GIT**
 
-[Curso de GIT](https://learngitbranching.js.org/) - Guía interactiva de GIT
+--------[Curso de GIT](https://learngitbranching.js.org/) - Guía interactiva de GIT
 
-[Git and Github introduction - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12386072#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
+--------[Git and Github introduction - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12386072#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
 
 **REST API**
 
-[APIs -Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384684#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
+--------[APIs -Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384684#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
 
 **Archivos JSON**
 
-[JSON - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384714#overview) - Curso Udemy(*utilizar credenciales listadas arriba*)
+--------[JSON - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384714#overview) - Curso Udemy(*utilizar credenciales listadas arriba*)
 
 **CRUD**
 
-[CRUD](https://www.codecademy.com/articles/what-is-crud) - Resumen introductorio a CRUDs
+--------[CRUD](https://www.codecademy.com/articles/what-is-crud) - Resumen introductorio a CRUDs
 
 **GraphQL**
 
-[How to GraphQL](https://www.howtographql.com/) - Curso Base en el cual nos guiaremos
+--------[How to GraphQL](https://www.howtographql.com/) - Curso Base en el cual nos guiaremos
 
-[Server Side](https://www.howtographql.com/graphql-python/0-introduction/) - Introduccion a Python con GraphQL
+--------[Server Side](https://www.howtographql.com/graphql-python/0-introduction/) - Introduccion a Python con GraphQL
 
-[Client Side](https://www.howtographql.com/react-urql/0-introduction/) - Introduccion al cliente de front-end URQL
+--------[Client Side](https://www.howtographql.com/react-urql/0-introduction/) - Introduccion al cliente de front-end URQL
 
-[Introducción alternativa](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - Video tutorial alternativo *Solo nos sirve hasta antes de cliente Apollo*
+--------[Introducción alternativa](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - Video tutorial alternativo *Solo nos sirve hasta antes de cliente Apollo*
 
 **Testing**
 
-[Testing Essentials](https://www.udacity.com/course/software-testing--cs258) - Curso gratuito de Testing (requiere registrarse)
+--------[Testing Essentials](https://www.udacity.com/course/software-testing--cs258) - Curso gratuito de Testing (requiere registrarse)
 
 ## Back-End
-Instalacion y configuracion de Django
+**Instalacion y configuracion de Django**
 
-Armar 5 CRUDs en Django
+**Armar 5 CRUDs en Django**
 
-Estudiar estandar sintactico de Python y luego Django
+**Estudiar estandar sintactico de Python y luego Django**
 
 
 ## Front-End
-Manejo del Dom
+**Manejo del Dom**
 
-Aprender bases javascript
-*ES6 (javacript nativo)  
-*ES7 (nuevas funciones necesarias para react y otros frameworks modernos)
+--------[DOM - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12374106#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
 
-Estudiar estandar sintactico de JS
+**Aprender bases javascript**
 
-Aprender React
+* ES6 (javacript nativo)  
 
-[Introducción](https://egghead.io/courses/start-learning-react) - Curso introducción de EggHead
+* Node
 
-[Introducción alternativa](https://tylermcginnis.com/free-react-bootcamp/?ref=designrevision.com) - Esta es una serie de videos tipo bootcamp
+--------[Node - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384268#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
 
-[React intermedio](https://reactarmory.com/guides/learn-react-by-itself/react-basics#JSX-converts-to-JavaScript) - Tutorial de React más avanzado, previo a utilizar componentes extra tales como URQL
+* ES7 (nuevas funciones necesarias para react y otros frameworks modernos)
 
-Estudiar estandar sintactico de React
+**Estudiar estandar sintactico de JS**
+
+**Aprender React**
+
+--------[Introducción](https://egghead.io/courses/start-learning-react) - Curso introducción de EggHead
+
+--------[Introducción alternativa](https://tylermcginnis.com/free-react-bootcamp/?ref=designrevision.com) - Esta es una serie de videos tipo bootcamp
+
+--------[React intermedio](https://reactarmory.com/guides/learn-react-by-itself/react-basics#JSX-converts-to-JavaScript) - Tutorial de React más avanzado, previo a utilizar componentes extra tales como URQL
+
+**Estudiar estandar sintactico de React**
 
 ## Emprendimiento
-Mejorar presentacion.
+**Mejorar presentacion**
 
-Investigar competencia:
+**Investigar competencia:**
 
 * webflow
 * bubble.io
