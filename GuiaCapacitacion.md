@@ -1,38 +1,77 @@
 
 # Guia
+Tal como revisamos en la ultima reunion del 2019 estos son los recursos que hay que estudiar previo a la fase del desarrollo.
 
-Tal como revisamos en la ultima reunion del 2019 estos son los recursos que hay que estudiar previo a la fase del desarrollo:
+*debajo de algunos temas se agregaron enlaces a recursos sugeridos, si tienen algun recurso bueno que quieran compartir actualicen este archivo ;)*
+
+Credenciales Comunitarias:
+
+**Usuario Udemy: danvc1984@gmail.com** **Contraseña: Proyecto}**
 
 ## Bases
+**Manejar Requests con HTTPS**
 
-Manejar Requests con https
-Archivos JSON
-Comandos GIT
-REST API
-GraphQL
-Testing
+**Comandos GIT**
+
+[Curso de GIT](https://learngitbranching.js.org/) - Guía interactiva de GIT
+
+[Curso Web Dev - Git and Github introduction](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12386072#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
+
+**REST API**
+
+[Curso Web Dev - APIs](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384684#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
+
+**Archivos JSON**
+
+[Curso Web Dev - JSON](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384714#overview) - Curso Udemy(*utilizar credenciales listadas arriba*)
+
+**CRUD**
+
+[CRUD](https://www.codecademy.com/articles/what-is-crud) - Resumen introductorio a CRUDs
+
+**GraphQL**
+
+[How to GraphQL](https://www.howtographql.com/) - Curso Base en el cual nos guiaremos
+
+[Client Side](https://www.howtographql.com/react-urql/0-introduction/) - Introduccion al cliente de front-end que utilizaremos URQL**
+
+[Server Side](https://www.howtographql.com/graphql-python/0-introduction/) - Introduccion a Python con GraphQL**
+
+[Introducción alternativa](https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f) - Video tutorial alternativo *Solo nos sirve hasta antes de Apollo*
+
+**Testing**
 
 ## Back-End
-python con django instalar
-5 crud en django
-estandar sintactico
+Instalacion y configuracion de Django
+
+Armar 5 CRUDs en Django
+
+Estudiar estandar sintactico de Python y luego Django
 
 
 ## Front-End
-dom
-es6
-estander
-react
-estandar
+Manejo del Dom
+
+Aprender bases javascript
+*ES6 (javacript nativo)  
+*ES7 (nuevas funciones necesarias para react y otros frameworks modernos)
+
+Estudiar estandar sintactico de JS
+
+Aprender React
+
+Estudiar estandar sintactico de React
 
 ## Emprendimiento
-Mejorar presentacion
+Mejorar presentacion.
+
 Investigar competencia:
- - webflow
- - bubble.io
+
+* webflow
+* bubble.io
 
 
-**[Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/) - Curso con varias de las bases que necesitamos (utilizar credenciales listadas abajo)**
+
 
   Secciones que vamos a utilizar de este curso:
   - HTML 5
@@ -43,9 +82,9 @@ Investigar competencia:
   - NodeJS
   - APIs
   - *El resto de las cosas no son pertinentes al proyecto*
-  - **Usuario: danvc1984@gmail.com** **Contraseña: Proyecto}**
+  - 
    
-**[Curso de GIT](https://learngitbranching.js.org/) - Guía interactiva de GIT**
+
 
 **[Curso de Testing](https://www.udacity.com/course/software-testing--cs258) - Curso gratuito de Testing (requiere registrarse)**
 
