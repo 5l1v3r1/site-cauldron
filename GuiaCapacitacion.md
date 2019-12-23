@@ -50,6 +50,10 @@ Credenciales Comunitarias:
 
 **Estudiar estandar sintactico de Python y luego Django**
 
+Tambien tenemos acceso a un curso basico de python por si les gustaria refrescarlo
+
+--------[Python Essentials](https://www.udemy.com/course/python-masterclass/learn/lecture/8839926?start=0#overview) - Curso en Udemy(*utilizar credenciales listadas arriba*)
+
 
 ## Front-End
 **Manejo del Dom**
@@ -81,7 +85,7 @@ Credenciales Comunitarias:
 ## Emprendimiento
 **Mejorar presentacion**
 
-**Investigar competencia:**
+**Investigar competencia**
 
 * webflow
 * bubble.io
