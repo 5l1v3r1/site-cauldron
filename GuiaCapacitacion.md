@@ -1,7 +1,10 @@
 
-## Base
+# Guia
 
-**[Curso de las tecnologías base](https://www.udemy.com/course/the-complete-web-development-bootcamp/) - Curso de AppBrewery que había comprado en Udemy (utilizar credenciales listadas abajo)**
+Tal como revisamos en la ultima reunion del 2019 estos son los recursos que hay que estudiar previo a la fase del desarrollo:
+
+
+**[Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/) - Curso con varias de las bases que necesitamos (utilizar credenciales listadas abajo)**
 
   Secciones que vamos a utilizar de este curso:
   - HTML 5
