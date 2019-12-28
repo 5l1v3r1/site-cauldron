@@ -9,14 +9,14 @@ using SiteCauldron.Database;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
-using Pluralize.NET.Core;
-using System.ComponentModel.DataAnnotations.Schema;
 using SiteCauldron.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SiteCauldron.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class GeneralController : ControllerBase
     {
         /**** PROPERTIES ****/
