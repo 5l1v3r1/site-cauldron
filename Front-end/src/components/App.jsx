@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Menu from './components/Menu'
-import Footer from './components/Footer'
-import SideDoc from './components/SideDoc'
+import Menu from './Menu'
+import Footer from './Footer'
+import SideDoc from './SideDoc'
 
 
 function App() {
