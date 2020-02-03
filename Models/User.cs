@@ -23,11 +23,8 @@ namespace SiteCauldron.Models
         [Column("password")]
         public string Password { get; set; }
 
-        [Column("currently_active")]
-        public bool CurrentlyActive { get; set; }
-
         [Column("last_activity")]
-        public DateTime LastActivity { get; set; }
+        public DateTime? LastActivity { get; set; }
 
 
         public virtual IQueryable<UserProject> Projects { get; set; }

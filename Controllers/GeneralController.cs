@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Reflection;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SiteCauldron.Database;
@@ -16,7 +15,7 @@ namespace SiteCauldron.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize(Roles = "User, Admin")]
     public class GeneralController : ControllerBase
     {
         /**** PROPERTIES ****/
@@ -56,7 +55,7 @@ namespace SiteCauldron.Controllers
 
 
 
-        /**** ENPOINTS ****/
+        /**** ENDPOINTS ****/
 
         [HttpGet("{entityType}")]
         public ActionResult GetAll(string entityType) =>

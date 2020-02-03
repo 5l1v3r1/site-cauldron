@@ -48,6 +48,7 @@ namespace SiteCauldron
             services.AddDbContext<Context>(options => options
                 .UseSqlServer(Configuration["ConnectionStrings:Local"])
             );
+            services.AddSingleton<ICommonSingletons, CommonSingletons>();
             services.AddSingleton<IEntitiesInfo, EntitiesInfo>();
             services.AddSingleton<IAuthInfoProvider>(new AuthInfoProvider(tokenValidationParameters));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
