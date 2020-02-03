@@ -68,7 +68,7 @@ Tambien tenemos acceso a un curso basico de python por si les gustaria refrescar
 
 --------[Node - Curso Web Dev](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384268#overview) - Curso Udemy (*utilizar credenciales listadas arriba*)
 
-* ES7 (nuevas funciones necesarias para react y otros frameworks modernos)
+* ES7 (nuevas funciones necesarias para react y otros frameworks modernos). https://www.youtube.com/watch?v=fvKbObLwEys (explicación breve)
 
 **Estudiar estandar sintactico de JS**
 
