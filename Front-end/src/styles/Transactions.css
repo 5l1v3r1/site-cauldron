@@ -1,4 +1,4 @@
-input {
+/* input {
   font-family: "Montserrat", sans-serif;
   color: #535353;
 }
@@ -18,11 +18,11 @@ button {
   height: 45px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  background: #ffe924cc; /*cambiar inline*/
-  border: 1px solid #000;
+  background: #ffe924cc; cambiar inline */
+  /* border: 1px solid #000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 .transactional {
   background: #430d7578;
   padding: 50px;

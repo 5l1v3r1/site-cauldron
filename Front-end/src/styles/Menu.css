@@ -11,22 +11,22 @@
 }
 
 .Menu ul{
-    width: 50%;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-  
+
 .Menu li {
     padding: 5px;
     padding-top: 15px;
     float: right;
 }
-  
+
 .Menu li:first-child {
     margin-right: 10px;
 }
-  
+
 .Menu li:hover {
     background-color: #0ace59;
 }
@@ -36,15 +36,6 @@
     width: 30px;
 }
 
-.logo {
-  color: rgb(0, 0, 0);
-  font-size: xx-large;
-  width: 50%;
-  font-family: "Lustria", serif;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-left: 10px;
-}
 .Menu button {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -52,4 +43,14 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    width: 50%;
+    font-family: "Lustria", serif;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 10px;
 }

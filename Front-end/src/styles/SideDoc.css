@@ -21,7 +21,7 @@
     -webkit-border-radius: 0 0 9px 9px;
     display: inline-flex;
     overflow-y: scroll;
-  }
+}
 .SideDoc h2 {
     color:#62EF30;
     writing-mode: vertical-lr;

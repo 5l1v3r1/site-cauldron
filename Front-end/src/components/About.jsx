@@ -1,10 +1,10 @@
 import React from "react";
-import Cross from "../images/eliminar.png";
+import Cross from "../images/Close.png";
 import "../styles/About.css";
 
 function about() {
   return (
-    <div class="about">
+    <div className="about">
       <h2>About Us</h2>
       <img src={Cross} alt="Exit"></img>
       <div>

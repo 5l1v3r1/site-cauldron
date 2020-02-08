@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/User.css";
 function register() {
   return (
-    <div class="user">
+    <div className="user">
       <h1>Register to start making projects!</h1>
       <p>
         Name: <input type="text" placeholder=" User Name" />
@@ -16,7 +16,7 @@ function register() {
       </p>
       <p>
         Pin:
-        <input type="text" placeholder=" - - - - " size="8" maxlength="4" />
+        <input type="text" placeholder=" _ _ _ _ " size="8" maxLength="4" />
       </p>
       <p>
         Cellphone: <input type="text" placeholder=" cellphone" />

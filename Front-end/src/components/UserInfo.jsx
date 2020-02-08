@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/User.css";
 function user() {
   return (
-    <div class="user">
+    <div className="user">
       <h1>User Information</h1>
       <p>
         Name: <input type="text" placeholder=" User Name" />
@@ -16,7 +16,7 @@ function user() {
       </p>
       <p>
         Pin:
-        <input type="text" placeholder=" - - - - " size="8" maxlength="4" />
+        <input type="text" placeholder=" - - - - " size="8" maxLength="4" />
       </p>
       <p>
         Cellphone: <input type="text" placeholder=" cellphone" />

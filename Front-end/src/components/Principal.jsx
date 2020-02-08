@@ -6,7 +6,7 @@ import GraphQl from '../images/GraphQL_Logo.png'
 
 function Principal(params) {
     return(
-        <body className = "Body">
+        <div className = "Body">
             <br/>
             <img src={Cauldron} alt="" ></img>  
             <p>
@@ -17,7 +17,7 @@ function Principal(params) {
                 Vestibulum in malesuada purus, sit amet sagittis sem. Nullam mattis sapien id est iaculis, a mollis sapien ultrices. Maecenas aliquam dapibus egestas. Ut faucibus elit ipsum, in eleifend nunc molestie eget. Nulla in purus non lacus consectetur feugiat. Aenean sit amet ligula vel diam ullamcorper dignissim. Proin at eros dignissim, tempus est a, ornare sapien. Proin ullamcorper libero eget condimentum tincidunt. Nam tellus lectus, blandit non hendrerit vitae, ullamcorper sit amet felis. Nunc egestas metus nisi, eget dapibus turpis accumsan aliquam. Maecenas suscipit, purus pulvinar tristique imperdiet, mauris erat condimentum sapien, at vehicula nulla orci quis diam. Nullam finibus efficitur eros eget tempus. Aenean vitae vehicula odio, id iaculis augue.
                 Suspendisse potenti. Fusce egestas dignissim nunc, at mollis dui sagittis vel. Suspendisse ante tellus, ornare eget dui et, congue accumsan eros.
             </p>
-        </body>
+        </div>
     )
 }
 
