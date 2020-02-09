@@ -16,6 +16,7 @@ using SiteCauldron.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using EntityGraphQL.Schema;
 
 namespace SiteCauldron
 {
@@ -40,14 +41,15 @@ namespace SiteCauldron
                     Encoding.UTF8.GetBytes(Configuration["AuthInfo:SecretKey"])
                 )
             }.To(tokenValidationParameters =>
-                new object()
-                .Do(_ => services.AddControllers())
-                .Do(_ => services.AddDbContext<Context>(options => options
+                services
+                .Do(s => s.AddControllers())
+                .Do(s => s.AddDbContext<Context>(options => options
                          .UseSqlServer(Configuration["ConnectionStrings:Local"])))
-                .Do(_ => services.AddSingleton<ICommonSingletons, CommonSingletons>())
-                .Do(_ => services.AddSingleton<IEntitiesInfo, EntitiesInfo>())
-                .Do(_ => services.AddSingleton<IAuthInfoProvider>(new AuthInfoProvider(tokenValidationParameters)))
-                .Do(_ => services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .Do(s => s.AddSingleton(SchemaBuilder.FromObject<Context>()))
+                .Do(s => s.AddSingleton<ICommonSingletons, CommonSingletons>())
+                .Do(s => s.AddSingleton<IEntitiesInfo, EntitiesInfo>())
+                .Do(s => s.AddSingleton<IAuthInfoProvider>(new AuthInfoProvider(tokenValidationParameters)))
+                .Do(s => s.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options => options.TokenValidationParameters = tokenValidationParameters))
             );
 
