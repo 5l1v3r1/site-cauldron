@@ -44,7 +44,8 @@ namespace SiteCauldron
                 services
                 .Do(s => s.AddControllers())
                 .Do(s => s.AddDbContext<Context>(options => options
-                         .UseSqlServer(Configuration["ConnectionStrings:Local"])))
+                        .UseSqlServer(Configuration["ConnectionStrings:Local"])))
+                        //.UseMySQL(Configuration["ConnectionStrings:LocalMySQL"])))
                 .Do(s => s.AddSingleton(SchemaBuilder.FromObject<Context>()))
                 .Do(s => s.AddSingleton<ICommonSingletons, CommonSingletons>())
                 .Do(s => s.AddSingleton<IEntitiesInfo, EntitiesInfo>())
