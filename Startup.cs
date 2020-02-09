@@ -21,17 +21,14 @@ namespace SiteCauldron
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
+        public Startup(IConfiguration configuration) =>
             Configuration = configuration;
-        }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            TokenValidationParameters tokenValidationParameters = new TokenValidationParameters
+        public void ConfigureServices(IServiceCollection services) =>
+            new TokenValidationParameters
             {
                 ValidateIssuer = true,
                 ValidateAudience = true,
@@ -42,36 +39,26 @@ namespace SiteCauldron
                 IssuerSigningKey = new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(Configuration["AuthInfo:SecretKey"])
                 )
-            };
-
-            services.AddControllers();
-            services.AddDbContext<Context>(options => options
-                .UseSqlServer(Configuration["ConnectionStrings:Local"])
+            }.To(tokenValidationParameters =>
+                new object()
+                .Do(_ => services.AddControllers())
+                .Do(_ => services.AddDbContext<Context>(options => options
+                         .UseSqlServer(Configuration["ConnectionStrings:Local"])))
+                .Do(_ => services.AddSingleton<ICommonSingletons, CommonSingletons>())
+                .Do(_ => services.AddSingleton<IEntitiesInfo, EntitiesInfo>())
+                .Do(_ => services.AddSingleton<IAuthInfoProvider>(new AuthInfoProvider(tokenValidationParameters)))
+                .Do(_ => services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options => options.TokenValidationParameters = tokenValidationParameters))
             );
-            services.AddSingleton<ICommonSingletons, CommonSingletons>();
-            services.AddSingleton<IEntitiesInfo, EntitiesInfo>();
-            services.AddSingleton<IAuthInfoProvider>(new AuthInfoProvider(tokenValidationParameters));
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options => options.TokenValidationParameters = tokenValidationParameters);
-        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseAuthentication();
-
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
-        }
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) =>
+            env.DoIf(x => x.IsDevelopment())
+                    (_ => app.UseDeveloperExceptionPage())
+                .Do(_ => app.UseAuthentication())
+                .Do(_ => app.UseHttpsRedirection())
+                .Do(_ => app.UseRouting())
+                .Do(_ => app.UseAuthorization())
+                .Do(_ => app.UseEndpoints(endpoints => endpoints.MapControllers()));
     }
 }

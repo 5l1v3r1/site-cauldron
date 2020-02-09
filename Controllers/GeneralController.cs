@@ -13,6 +13,14 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SiteCauldron.Controllers
 {
+    /// <summary>
+    /// A controller which is able to perform every CRUD operation for every
+    /// single model in the assembly using the same configured database
+    /// context.
+    /// </summary>
+    /// <remarks>
+    /// 
+    /// </remarks>
     [Route("[controller]")]
     [ApiController]
     [Authorize(Roles = "User, Admin")]
@@ -26,11 +34,8 @@ namespace SiteCauldron.Controllers
 
         /**** CONSTRUCTORS ****/
 
-        public GeneralController(Context context, IEntitiesInfo entitiesInfo)
-        {
-            db = context;
-            ei = entitiesInfo;
-        }
+        public GeneralController(Context context, IEntitiesInfo entitiesInfo) =>
+            (db, ei) = (context, entitiesInfo);
 
 
 

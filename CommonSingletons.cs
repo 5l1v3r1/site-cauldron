@@ -14,10 +14,7 @@ namespace SiteCauldron
 
         public SHA256 SHA256 { get; }
 
-        public CommonSingletons()
-        {
-            JWT = new JwtSecurityTokenHandler();
-            SHA256 = SHA256.Create();
-        }
+        public CommonSingletons() =>
+            (JWT, SHA256) = (new JwtSecurityTokenHandler(), SHA256.Create());
     }
 }

@@ -12,9 +12,7 @@ namespace SiteCauldron
         public TokenValidationParameters TokenValidationParameters { get; }
 
 
-        public AuthInfoProvider(TokenValidationParameters tokenValidationParameters)
-        {
+        public AuthInfoProvider(TokenValidationParameters tokenValidationParameters) =>
             TokenValidationParameters = tokenValidationParameters;
-        }
     }
 }

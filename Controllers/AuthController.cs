@@ -28,12 +28,8 @@ namespace SiteCauldron.Controllers
         private readonly IAuthInfoProvider aip;
         private readonly Context db;
 
-        public AuthController(ICommonSingletons singletons, IAuthInfoProvider authInfoProvider, Context database)
-        {
-            aip = authInfoProvider;
-            db = database;
-            sngl = singletons;
-        }
+        public AuthController(ICommonSingletons singletons, IAuthInfoProvider authInfoProvider, Context database) =>
+            (aip, db, sngl) = (authInfoProvider, database, singletons);
 
         public string SHA256Hash(string s) => sngl.SHA256
             .ComputeHash(Encoding.UTF8.GetBytes(s))
