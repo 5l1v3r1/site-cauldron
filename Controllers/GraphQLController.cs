@@ -6,6 +6,7 @@ using EntityGraphQL;
 using EntityGraphQL.Schema;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SiteCauldron.Database;
 
 namespace SiteCauldron.Controllers
@@ -21,7 +22,7 @@ namespace SiteCauldron.Controllers
             (db, sp) = (context, schemaProvider);
 
         [HttpGet]
-        public ActionResult Get([FromBody] QueryRequest query) =>
-            Ok(db.QueryObject(query, sp));
+        public ActionResult<string> Get([FromBody] QueryRequest query) =>
+            Ok(JsonConvert.SerializeObject(db.QueryObject(query, sp)));
     }
 }
