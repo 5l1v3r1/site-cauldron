@@ -1,0 +1,31 @@
+.Login {
+  margin-top: 90px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 30%;
+  display: flexbox;
+  text-align: center;
+}
+
+.Login ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.Login span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Login img {
+  width: 50%;
+}
+
+.Login a {
+  font-size: 24px;
+  color: #ff00c7;
+}
+
+.Login input {
+  margin-left: 10px;
+}

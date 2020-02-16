@@ -1,19 +1,15 @@
 import React from "react";
-<<<<<<< Updated upstream
 
-import "./Login.css";
-=======
 import Button from "../UI/Button/Button";
 import classes from "./Login.module.css";
->>>>>>> Stashed changes
 
 import Cauldron from "../../assets/images/Cauldron.jpg";
 
-function Login() {
+const Login = () => {
   return (
-    <div className="Login">
-      <div className="row">
-        <div className="column">
+    <div className={classes.Login}>
+      <div>
+        <div>
           <span>
             {" "}
             Database Name:
@@ -36,12 +32,12 @@ function Login() {
           </p>
         </div>
 
-        <div className="column">
+        <div>
           <img src={Cauldron}></img>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Login;
