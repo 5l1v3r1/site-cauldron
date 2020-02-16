@@ -3,14 +3,10 @@
 body {
   background: #d9dad9;
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #8E40BD;
+  background-color: #8e40bd;
   background-image: url("https://www.transparenttextures.com/patterns/strange-bullseyes.png");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
