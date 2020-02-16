@@ -1,6 +1,6 @@
 import React from "react";
 
-function MenuButton(props) {
+const MenuButton = props => {
   function selectOption() {
     props.onClick(props.name);
   }
@@ -10,6 +10,6 @@ function MenuButton(props) {
       <img src={props.button} alt={props.name}></img>
     </button>
   );
-}
+};
 
 export default MenuButton;

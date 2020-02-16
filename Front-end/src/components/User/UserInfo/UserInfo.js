@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "./../../UI/Button/Button";
 
-import "./User.css";
-function user() {
+import classes from "../User.module.css";
+const UserInfo = () => {
   return (
-    <div className="user">
+    <div className={classes.User}>
       <h1>User Information</h1>
       <p>
         Name: <input type="text" placeholder=" User Name" />
@@ -12,7 +13,7 @@ function user() {
         Email:
         <input type="text" placeholder=" Current Email / New Email" size="20" />
         &nbsp;
-        <button>Change Email</button>
+        <Button btnType="Information">Change Email</Button>
       </p>
       <p>
         Pin:
@@ -31,9 +32,9 @@ function user() {
         Type your new Password:
         <input type="text" placeholder=" ******** " />
       </p>
-      <button style={{ backgroundColor: "#02b449cc" }}>Update</button>
+      <Button btnType="Success">Update</Button>
     </div>
   );
-}
+};
 
-export default user;
+export default UserInfo;

@@ -1,10 +1,10 @@
 import React from "react";
+import Button from "./../UI/Button/Button";
+import classes from "./Projects.module.css";
 
-import "./Projects.css";
-
-function Projects() {
+const Projects = () => {
   return (
-    <div className="Projects">
+    <div className={classes.Projects}>
       <table>
         <tbody>
           <tr>
@@ -56,9 +56,9 @@ function Projects() {
       </table>
 
       <br />
-      <button className="NewProyect">New Proyect</button>
+      <Button btnType="Success">New Proyect</Button>
     </div>
   );
-}
+};
 
 export default Projects;

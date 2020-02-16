@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./Principal.css";
+import classes from "./Principal.module.css";
 import Cauldron from "../../assets/images/Cauldron.jpg";
 import GraphQl from "../../assets/images/GraphQL_Logo.png";
 
-function Principal(params) {
+const Principal = props => {
   return (
-    <div className="Body">
+    <div className={classes.Principal}>
       <br />
       <img src={Cauldron} alt=""></img>
       <p>
@@ -38,6 +38,6 @@ function Principal(params) {
       </p>
     </div>
   );
-}
+};
 
 export default Principal;

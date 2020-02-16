@@ -1,9 +1,9 @@
 import React from "react";
-
-import "../styles/User.css";
-function recover() {
+import Button from "./../../UI/Button/Button";
+import classes from "../User.module.css";
+const RecoverPass = () => {
   return (
-    <div class="user">
+    <div className={classes.User}>
       <p>
         <em>
           Enter your registered email, a pin will be sent to you. Once the pin
@@ -16,7 +16,7 @@ function recover() {
         Email:
         <input type="text" placeholder="Email" size="20" />
         &nbsp;
-        <button>Send pin</button>
+        <Button btnType="Information">Send pin</Button>
       </p>
       <p>
         Pin:
@@ -30,9 +30,9 @@ function recover() {
         Confirm Password:
         <input type="text" placeholder=" ******** " />
       </p>
-      <button style={{ backgroundColor: "#02b449cc" }}>Set new password</button>
+      <Button btnType="Success">Set new password</Button>
     </div>
   );
-}
+};
 
-export default recover;
+export default RecoverPass;

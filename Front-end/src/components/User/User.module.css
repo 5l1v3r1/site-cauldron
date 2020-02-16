@@ -1,0 +1,25 @@
+.User {
+  background: #d9dad9;
+  margin: auto;
+  font-weight: 700;
+  margin-top: 100px;
+  width: 80%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+.User input {
+  font-family: "Montserrat", sans-serif;
+  color: #535353;
+}
+.User p {
+  text-align: center;
+  display: block;
+}
+.User input {
+  width: fit-content;
+  text-align: center;
+}
+.User h2 {
+  text-decoration: underline;
+}

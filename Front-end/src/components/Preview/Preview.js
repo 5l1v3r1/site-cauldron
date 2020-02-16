@@ -1,19 +1,20 @@
 import React from "react";
 
-import "./Preview.css";
+import Button from "./../UI/Button/Button";
+import classes from "./Preview.module.css";
 
 import Cross from "../images/eliminar.png";
 import Database from "../images/Database.PNG";
 
-function Preview() {
+const Preview = () => {
   return (
-    <div class="Preview">
+    <div className={classes.Preview}>
       <h2>Preview</h2>
-      <img className="Close" src={Cross} alt="Exit"></img>
+      <img className={classes.Close} src={Cross} alt="Exit"></img>
 
       <div>
         <img
-          className="ImgDatabase"
+          className={classes.ImgDatabase}
           src={Database}
           alt="Database example"
         ></img>
@@ -22,13 +23,13 @@ function Preview() {
           <p>Proyect number one</p>
           Status:
           <p>Ready</p>
-          <button style={{ backgroundColor: "#9BCE0A" }}>Editing</button>
+          <Button>Editing</Button>
           <br />
-          <button style={{ backgroundColor: "#0ACE59" }}>Download</button>
+          <Button>Download</Button>
         </span>
       </div>
     </div>
   );
-}
+};
 
 export default Preview;

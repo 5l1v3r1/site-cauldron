@@ -1,12 +1,12 @@
 import React from "react";
-
-import "./CreateProject.css";
+import Button from "./../UI/Button/Button";
+import classes from "./CreateProject.module.css";
 
 //* Dummy Container for project creation section
 
-function CreateProject() {
+const CreateProject = () => {
   return (
-    <form className="CreateProject">
+    <form className={classes.CreateProject}>
       <span>
         {" "}
         Database Name:
@@ -19,12 +19,9 @@ function CreateProject() {
         <input maxLength="250" size="40" type="text" />
       </span>
 
-      <p style={{ fontStyle: "italic" }}>
-        <button className="Discard">Discard</button>
-        Tables
-      </p>
+      <Button btnType="Danger">Discard</Button>
 
-      <div className="Tables">
+      <div className={classes.Tables}>
         <p>
           {" "}
           Table Name:
@@ -32,13 +29,13 @@ function CreateProject() {
         </p>
 
         <p style={{ fontStyle: "italic", marginLeft: "10px" }}>Columns</p>
-        <div className="Columns">
+        <div className={classes.Columns}>
           <p>
             {" "}
             Column Name:
             <input maxLength="20" size="20" type="text" />
           </p>
-          <div className="ColumnData">
+          <div className={classes.ColumnData}>
             <p>
               {" "}
               Type:
@@ -50,29 +47,29 @@ function CreateProject() {
               <input maxLength="20" size="20" type="text" />
             </p>
           </div>
-          <p className="Add">
+          <p className={classes.Add}>
             Add column:
             <button>+</button>
           </p>
-          <p className="Add">
+          <p className={classes.Add}>
             Remove column:
             <button>-</button>
           </p>
         </div>
-        <p className="Add">
+        <p className={classes.Add}>
           Add table:
           <button>+</button>
         </p>
-        <p className="Add">
+        <p className={classes.Add}>
           Remove table:
           <button>-</button>
         </p>
       </div>
       <p>
-        <button className="Send">Send</button>
+        <Button btnType="Success">Send</Button>
       </p>
     </form>
   );
-}
+};
 
 export default CreateProject;

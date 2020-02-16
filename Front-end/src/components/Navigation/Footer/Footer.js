@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./Footer.css";
+import classes from "./Footer.module.css";
 
-function Foot() {
+const Footer = () => {
   return (
-    <div className="footer">
+    <div className={classes.Footer}>
       <div>
         <h2>Organizations</h2>
         <p>
@@ -31,6 +31,6 @@ function Foot() {
       </div>
     </div>
   );
-}
+};
 
-export default Foot;
+export default Footer;

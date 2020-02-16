@@ -1,9 +1,11 @@
 import React from "react";
+import Button from "./../../UI/Button/Button";
 
-import "../UserInfo/User.css";
-function register() {
+import "../User.module.css";
+import classes from "../User.module.css";
+const RegisterUser = () => {
   return (
-    <div className="user">
+    <div className={classes.User}>
       <h1>Register to start making projects!</h1>
       <p>
         Name: <input type="text" placeholder=" User Name" />
@@ -12,7 +14,7 @@ function register() {
         Email:
         <input type="text" placeholder=" Email" size="20" />
         &nbsp;
-        <button>Verify Email</button>
+        <Button btnType="Information">Verify Email</Button>
       </p>
       <p>
         Pin:
@@ -33,9 +35,9 @@ function register() {
         Confirm Password:
         <input type="text" placeholder=" ******** " />
       </p>
-      <button style={{ backgroundColor: "#02b449cc" }}>Register!</button>
+      <Button btnType="Success">Register!</Button>
     </div>
   );
-}
+};
 
-export default register;
+export default RegisterUser;

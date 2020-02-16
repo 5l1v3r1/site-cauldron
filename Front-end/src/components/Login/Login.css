@@ -26,6 +26,7 @@
     color: #FF00C7;
 }
 
+<<<<<<< Updated upstream:Front-end/src/components/Login/Login.css
 .LogIn button{    
     background-color: #0ACE59;
     cursor: pointer;
@@ -35,3 +36,8 @@
 .LogIn input{
     margin-left: 10px;
 }
+=======
+.Login input {
+  margin-left: 10px;
+}
+>>>>>>> Stashed changes:Front-end/src/components/Login/Login.module.css

@@ -1,0 +1,13 @@
+.Principal {
+  margin-top: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30%;
+  display: flexbox;
+}
+
+.Principal img {
+  float: right;
+  width: 30%;
+  height: 30%;
+}

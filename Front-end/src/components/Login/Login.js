@@ -1,6 +1,11 @@
 import React from "react";
+<<<<<<< Updated upstream
 
 import "./Login.css";
+=======
+import Button from "../UI/Button/Button";
+import classes from "./Login.module.css";
+>>>>>>> Stashed changes
 
 import Cauldron from "../../assets/images/Cauldron.jpg";
 
@@ -21,7 +26,7 @@ function Login() {
             <input maxLength="250" size="40" type="text" />
           </span>
           <p>
-            <button>LogIn</button>
+            <Button>Login</Button>
           </p>
           <p>
             <a href="#">Forgot password?</a>

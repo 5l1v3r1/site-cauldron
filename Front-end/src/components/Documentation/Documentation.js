@@ -5,13 +5,22 @@ import GraphQl from "../../assets/images/GraphQL_Logo.png";
 
 function Documentation() {
   return (
+<<<<<<< Updated upstream
     <div className="Documentation">
       <button className="expandible"> index </button>
       <div className="oculto" style={{ float: "left" }}>
+=======
+    <div className={classes.Documentation}>
+      {
+        //TODO: Proper overhaul of this component pending, commenting broken code meanwhile
+      }
+      {/* <button className={classes.expandible}> index </button>
+      <div className={classes.hidden} style={{ float: "left" }}>
+>>>>>>> Stashed changes
         <p>1.- GraphQL</p>
         <p>2.- BD Scheme</p>
         <p>3.- ORM Django</p>
-      </div>
+      </div> */}
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         finibus massa nibh, in luctus augue eleifend non. Cras consequat velit

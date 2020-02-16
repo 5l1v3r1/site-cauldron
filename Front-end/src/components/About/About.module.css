@@ -1,4 +1,4 @@
-.about {
+.About {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -15,27 +15,27 @@
   display: inline;
   padding-top: 10px;
 }
-.about img {
+.About img {
   float: right;
   height: 26px;
   width: 26px;
   padding: 5px;
   padding-top: 2px;
 }
-.about img:hover {
+.About img:hover {
   background-color: #0ace59;
   height: 24px;
   width: 24px;
 }
-/* 
-h2 {
+
+.About h2 {
   display: inline;
   margin: 2px;
   padding-left: 35%;
   padding-right: 35%;
-} */
+}
 
-.about div {
+.About div {
   margin-top: 10px;
   padding: 2%;
   padding-bottom: 6%;

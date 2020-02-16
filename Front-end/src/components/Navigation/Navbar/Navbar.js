@@ -6,17 +6,17 @@ import registered, { unRegistered } from "../../../utils/menuItems";
 
 import NavButton from "./NavButton/NavButton";
 
-import "./Navbar.css";
+import classes from "./Navbar.module.css";
 
-function Navbar(props) {
+const Navbar = props => {
   function option(option) {
     props.confCont(option);
   }
 
   if (props.user)
     return (
-      <nav className="Menu">
-        <img src={Logo} alt="Logo" />
+      <nav className={classes.Navbar}>
+        <img className={classes.Logo} src={Logo} alt="Logo" />
         Site Cauldron
         <ul>
           {registered.map(item => {
@@ -35,8 +35,8 @@ function Navbar(props) {
     );
   else
     return (
-      <nav className="Menu">
-        <img className="Logo" src={Logo} alt="Logo" />
+      <nav className={classes.Navbar}>
+        <img className={classes.Logo} src={Logo} alt="Logo" />
         Site Cauldron
         <ul>
           {unRegistered.map(item => {
@@ -53,6 +53,6 @@ function Navbar(props) {
         </ul>
       </nav>
     );
-}
+};
 
 export default Navbar;

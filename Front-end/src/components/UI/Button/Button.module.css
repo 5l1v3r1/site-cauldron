@@ -1,0 +1,29 @@
+.Button {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  height: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background: rgba(0, 153, 46, 0.931);
+  color: #f2faff;
+  border: 1px solid rgba(0, 0, 0, 0.589);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.096);
+}
+
+.Success {
+  background: #5c9210;
+  color: #b1cc8a;
+}
+
+.Information {
+  background: #007599cc;
+  color: #b5cfdf;
+}
+
+.Danger {
+  background: #944317;
+  color: #d1cecc;
+}

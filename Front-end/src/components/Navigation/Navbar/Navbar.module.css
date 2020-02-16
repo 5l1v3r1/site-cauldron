@@ -1,0 +1,62 @@
+.Navbar {
+  background-image: linear-gradient(
+    to right,
+    #0ace59,
+    #8e40bd,
+    #8e40bd,
+    #8e40bd
+  );
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  min-width: 700px;
+  height: 70px;
+  min-height: 70px;
+  margin: 0;
+}
+
+.Navbar ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar li {
+  padding: 5px;
+  padding-top: 15px;
+  float: right;
+}
+
+.Navbar li:first-child {
+  margin-right: 10px;
+}
+
+.Navbar li:hover {
+  background-color: #0ace59;
+}
+
+.Navbar img {
+  height: 30px;
+  width: 30px;
+}
+
+.Navbar button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.Logo {
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
+  width: 50%;
+  font-family: "Lustria", serif;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 10px;
+}

@@ -1,0 +1,18 @@
+.Projects {
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 20%;
+}
+.Projects table {
+  width: 100%;
+}
+.Projects th,
+td {
+  width: 20%;
+}
+.Projects hr {
+  height: 10px;
+  background-color: #c4c4c4;
+  margin-left: 5%;
+  margin-right: 15%;
+}

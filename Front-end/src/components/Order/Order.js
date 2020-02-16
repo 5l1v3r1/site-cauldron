@@ -1,23 +1,26 @@
 import React from "react";
-
-import "../styles/Transactions.css";
-function order() {
+import Button from "./../UI/Button/Button";
+import classes from "./Transactions.module.css";
+const Order = () => {
   return (
-    <div class="transaction">
+    <div className={classes.Transaction}>
       <h1>Order Details</h1>
-      <div class="transactional">
-        <div class="detail">
+      <div className={classes.Transactional}>
+        <div className={classes.Detail}>
           <span>Project Name:</span>
-          <div class="detailBox">Example project 3</div>
+          <div className={classes.DetailBox}>Example project 3</div>
         </div>
-        <div class="detail">
+        <div classNameclassName={classes.DetailBox}>
           <span>Price:</span>
-          <div class="detailBox">US $119.99</div>
+          <div className={classes.DetailBox}>US $119.99</div>
         </div>
       </div>
-      <button style={{ float: "right" }}> Check out with PayPal</button>
+      <Button btnType="Success" style={{ float: "right" }}>
+        {" "}
+        Check out with PayPal
+      </Button>
     </div>
   );
-}
+};
 
-export default order;
+export default Order;

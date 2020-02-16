@@ -1,11 +1,11 @@
 import React from "react";
 
-import "../styles/Transactions.css";
-function details() {
+import classes from "../Transactions.module.css";
+const Details = () => {
   return (
-    <div class="transaction">
+    <div class={classes.Transaction}>
       <h1>Transaction Receipt</h1>
-      <div class="transactional">
+      <div class={classes.Transactional}>
         <p>
           Transaction Information: <br />
           Lorem ipsum dolor sit amet consectetur adipiscing elit fames
@@ -20,17 +20,17 @@ function details() {
           libero sociosqu quam, dui commodo massa leo hendrerit aptent non eget
           magnis.
         </p>
-        <div class="detail">
+        <div className={classes.Detail}>
           <span>Project Name:</span>
-          <div class="detailBox">Example project 3</div>
+          <div className={classes.DetailBox}>Example project 3</div>
         </div>
-        <div class="detail">
+        <div className={classes.Detail}>
           <span>Price:</span>
-          <div class="detailBox">US $119.99</div>
+          <div className={classes.DetailBox}>US $119.99</div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default details;
+export default Details;

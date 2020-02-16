@@ -7,11 +7,11 @@ import Footer from "../../components/Navigation/Footer/Footer";
 import Principal from "../../components/Principal/Principal";
 import Login from "../../components/Login/Login";
 import AboutUs from "../../components/About/About";
-import UserInfo from "../../components/UserInfo/UserInfo";
+import UserInfo from "../../components/User/UserInfo/UserInfo";
 import Documentation from "../../components/Documentation/Documentation";
 import Projects from "../../components/Projects/Projects";
 import CreateProject from "../../components/CreateProject/CreateProject";
-import RegisterUser from "../../components/RegisterUser/RegisterUser";
+import RegisterUser from "../../components/User/RegisterUser/RegisterUser";
 
 const Layout = props => {
   const [selectedOption, setSelectedOption] = useState(<Principal />);
