@@ -1,31 +1,34 @@
-import React,{component} from 'react';
+import React from "react";
 
-import '../styles/Preview.css'
+import "./Preview.css";
 
-import Cross from '../images/eliminar.png'
-import Database from '../images/Database.PNG'
+import Cross from "../images/eliminar.png";
+import Database from "../images/Database.PNG";
 
 function Preview() {
-    return(
+  return (
     <div class="Preview">
-        <h2>Preview</h2>
-        <img className="Close" src={Cross} alt="Exit"></img>
-        
-        <div>
-        <img className="ImgDatabase" src={Database} alt="Database example"></img>
+      <h2>Preview</h2>
+      <img className="Close" src={Cross} alt="Exit"></img>
+
+      <div>
+        <img
+          className="ImgDatabase"
+          src={Database}
+          alt="Database example"
+        ></img>
         <span>
-            Proyect Name:
-            <p>Proyect number one</p>
-             Status: 
-            <p>Ready</p>
-        <button style={{backgroundColor:"#9BCE0A"}} >Editing</button>
-        <br/>
-        <button style={{backgroundColor:"#0ACE59"}}>Download</button>
+          Proyect Name:
+          <p>Proyect number one</p>
+          Status:
+          <p>Ready</p>
+          <button style={{ backgroundColor: "#9BCE0A" }}>Editing</button>
+          <br />
+          <button style={{ backgroundColor: "#0ACE59" }}>Download</button>
         </span>
-        
-        </div>
-  </div>
-    );
+      </div>
+    </div>
+  );
 }
 
-export default Preview
+export default Preview;

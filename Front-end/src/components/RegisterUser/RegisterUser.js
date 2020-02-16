@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/User.css";
+import "../UserInfo/User.css";
 function register() {
   return (
     <div className="user">

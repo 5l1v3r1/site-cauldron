@@ -1,6 +1,6 @@
 import React from "react";
-import Cross from "../images/Close.png";
-import "../styles/About.css";
+import Cross from "../../assets/images/Close.png";
+import "./About.css";
 
 function about() {
   return (

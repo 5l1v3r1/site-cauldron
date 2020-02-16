@@ -1,6 +1,6 @@
-import React, { component } from "react";
+import React from "react";
 
-import "../styles/CreateProject.css";
+import "./CreateProject.css";
 
 //* Dummy Container for project creation section
 

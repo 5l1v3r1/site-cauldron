@@ -1,11 +1,11 @@
 import LogOut from "../assets/images/LogOut.png";
-import AboutUs from "../assets/images/Info.png";
+import AboutUs from "../assets/images/info.png";
 import UserInfo from "../assets/images/User.png";
 import Documentation from "../assets/images/Document.png";
 import Projects from "../assets/images/Projects.png";
 import CreateProject from "../assets/images/NewProject.png";
 import LogIn from "../assets/images/LogIn.png";
-import RegisterUser from "./assets/images/NewUser.png";
+import RegisterUser from "../assets/images/NewUser.png";
 
 const registered = [
   {

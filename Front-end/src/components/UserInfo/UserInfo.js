@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/User.css";
+import "./User.css";
 function user() {
   return (
     <div className="user">

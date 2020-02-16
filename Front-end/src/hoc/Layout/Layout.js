@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 import Aux from "../Auxx/Auxx";
 import Navbar from "../../components/Navigation/Navbar/Navbar";
-import Footer from "./components/Footer";
+import Footer from "../../components/Navigation/Footer/Footer";
 
-import Principal from "./components/Principal";
-import LogIn from "./components/LogIn";
-import AboutUs from "./components/About";
-import UserInfo from "./components/UserInfo";
-import Documentation from "./components/Documentation";
-import Projects from "./components/Projects";
-import CreateProject from "./components/CreateProject";
-import RegisterUser from "./components/RegisterUser";
+import Principal from "../../components/Principal/Principal";
+import Login from "../../components/Login/Login";
+import AboutUs from "../../components/About/About";
+import UserInfo from "../../components/UserInfo/UserInfo";
+import Documentation from "../../components/Documentation/Documentation";
+import Projects from "../../components/Projects/Projects";
+import CreateProject from "../../components/CreateProject/CreateProject";
+import RegisterUser from "../../components/RegisterUser/RegisterUser";
 
 const Layout = props => {
   const [selectedOption, setSelectedOption] = useState(<Principal />);
@@ -20,9 +20,9 @@ const Layout = props => {
   function ConfigureContent(option) {
     console.log(option);
     switch (option) {
-      case "LogIn":
+      case "Login":
         setIsRegistered(!isRegistered);
-        setSelectedOption(<LogIn />);
+        setSelectedOption(<Login />);
         break;
       case "LogOut":
         setIsRegistered(!isRegistered);
@@ -59,7 +59,7 @@ const Layout = props => {
   return (
     <Aux>
       <Navbar
-        drawerToggleClicked={sideDrawerToggleHandler}
+        // drawerToggleClicked={sideDrawerToggleHandler}
         confCont={ConfigureContent}
         user={isRegistered}
       />

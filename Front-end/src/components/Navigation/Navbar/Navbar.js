@@ -6,7 +6,7 @@ import registered, { unRegistered } from "../../../utils/menuItems";
 
 import NavButton from "./NavButton/NavButton";
 
-import "../styles/Menu.css";
+import "./Navbar.css";
 
 function Navbar(props) {
   function option(option) {
