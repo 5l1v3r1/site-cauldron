@@ -4,9 +4,9 @@ import "./Login.css";
 
 import Cauldron from "../../assets/images/Cauldron.jpg";
 
-function LogIn() {
+function Login() {
   return (
-    <div className="LogIn">
+    <div className="Login">
       <div className="row">
         <div className="column">
           <span>
@@ -39,4 +39,4 @@ function LogIn() {
   );
 }
 
-export default LogIn;
+export default Login;

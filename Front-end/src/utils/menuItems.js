@@ -4,9 +4,8 @@ import UserInfo from "../assets/images/User.png";
 import Documentation from "../assets/images/Document.png";
 import Projects from "../assets/images/Projects.png";
 import CreateProject from "../assets/images/NewProject.png";
-import LogIn from "../assets/images/LogIn.png";
 import RegisterUser from "../assets/images/NewUser.png";
-
+import Login from "../assets/images/Login.png";
 const registered = [
   {
     key: "LogOut",
@@ -36,8 +35,8 @@ const registered = [
 
 const unRegistered = [
   {
-    key: "LogIn",
-    option: LogIn
+    key: "Login",
+    option: Login
   },
   {
     key: "AboutUs",
